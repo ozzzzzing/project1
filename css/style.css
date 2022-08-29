@@ -1,0 +1,1077 @@
+@font-face {
+    font-family: 'font';
+    src: url('../font/SCDream4.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'font';
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/******************헤더*******************/
+/**메인포스터~축제일정**/
+header {
+    background-color: #090524;
+    padding-bottom: 200px;
+}
+
+div#main_poster {
+    position: relative;
+    max-width: 100%;
+    /*메인포스터*/
+}
+
+div#main_poster img:nth-of-type(1) {
+    /*     position:absolute; */
+    /* width: 1440px; */
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*축제일정*/
+div#schedule_wrapper {
+    color: white;
+    position: relative;
+}
+
+/* div#line {
+    height: 2px;
+    width: 80%;
+    background-color: white;
+    position: absolute;
+    top: 350px;
+    z-index: 0;
+    margin: 0 10%;
+} */
+
+/* div#circle_box {
+    display: flex;
+    justify-content: space-around;
+} */
+/* 
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    top: 155px;
+}
+
+div#third_circle {
+    position: relative;
+    top: 145px;
+
+}
+
+#third1 {
+    width: 18px;
+    height: 18px;
+    border-radius: 10px;
+    background-color: #FF3D00;
+    position: absolute;
+    right: 16px;
+    top: 6px;
+    z-index: 9;
+}
+
+#third2 {
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: #090524;
+    position: absolute;
+    right: 12px;
+    top: 3px;
+    z-index: 8;
+}
+
+#third3 {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #FDAC21;
+    position: absolute;
+    right: 10px;
+    z-index: 7;
+}
+ */
+div#schedule_box1 {
+    text-align: center;
+    line-height: 300%;
+}
+
+div#schedule_box1 h2 {
+    color: #F2BA00;
+}
+
+div#schedule_box1 img:nth-of-type(1) {
+    max-width: 7%;
+}
+
+div#schedule_box1 img:nth-of-type(2) {
+    margin-top: 200px;
+    max-width: 90%;
+}
+
+div#schedule_box2 {
+    margin-top: -110px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.schedule {
+    text-align: center;
+    line-height: 5.5em;
+    margin-left: 50px;
+    position: relative;
+}
+
+.schedule:nth-of-type(3) {
+    line-height: 1.5em;
+}
+
+.schedule:nth-of-type(3) img:nth-of-type(1) {
+    margin-top: -50px;
+    padding-bottom: 100px;
+}
+
+.dongle {
+    position: absolute;
+    top: 80px;
+}
+
+/* .dongle:nth-of-type(1){
+    position:absolute;
+    left:50px;
+    border: 1px solid red;
+} */
+#dongle3 {
+    position: absolute;
+    left: 50px;
+}
+
+/******************섹션*******************/
+div#section_wrapper {
+    margin: 0 auto;
+    width: 100%;
+}
+
+section h2 {
+    margin: 20px 0;
+}
+
+div#section_wrapper .section {
+    text-align: center;
+    padding-top: 50px;
+}
+
+div#section_wrapper .section:nth-of-type(2n) {
+    background-color: #090524;
+    color: white;
+}
+
+div#section_wrapper .section:nth-of-type(2n-1) {
+    background-color: #EFEFEF;
+    /* color: white; */
+}
+
+
+
+/*축제안내*/
+div#section_wrapper section#enter {
+    background-color: #EFEFEF;
+    margin-bottom: -5px;
+}
+
+section#enter p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.enter_contents {
+    text-align: left;
+}
+
+.enter_contents p:nth-of-type(1) {
+    font-size: 1.8em;
+    padding-bottom: 50px;
+    font-weight: 500;
+}
+
+.enter_contents p:nth-of-type(2) {
+    font-size: 1.4em;
+    line-height: 250%;
+    text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white;
+}
+
+.enter_contents img {
+    width: 100%;
+    margin-top: -500px;
+}
+
+/*장소안내*/
+/**********지도api추가??*************/
+section.location {
+    padding-bottom: 100px;
+    background-color: #090524;
+    text-align: center;
+    padding-top: 50px;
+}
+
+section.location div#iframe_box {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section.location div#iframe_box iframe {
+    width: 100%;
+}
+
+section.location h2 {
+    color: #F2BA00;
+}
+
+section.location p {
+    margin-top: 50px;
+    line-height: 50px;
+    font-size: 1.5em;
+    color: #F2BA00;
+}
+
+/* 자리안내 */
+.seat {
+    padding-bottom: 100px;
+}
+
+.seat_img {
+    max-width: 100%;
+}
+
+@media screen and (min-width:600px) and (max-width:650px) {
+    .seat_img {
+        max-width: 70%;
+    }
+}
+
+/*티켓구매혜택*/
+#ticket_benefit {
+    /* height: 1000px; */
+    padding-bottom: 50px;
+}
+
+#ticket_benefit h2 {
+    color: #F2BA00;
+}
+
+section#ticket_benefit div#box_wrapper {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    max-width: 880px;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 60px;
+    align-items: center;
+}
+
+section#ticket_benefit div#box_wrapper .box {
+    width: 40%;
+    position: relative;
+    margin: 10px 12px;
+}
+
+section#ticket_benefit div#box_wrapper .box img {
+    max-width: 100%;
+}
+
+section#ticket_benefit div#box_wrapper .text {
+    visibility: hidden;
+    font-size: 1.8em;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    /* transition: .3s ease; */
+    width: 100%;
+    height: 100%;
+    padding-top: 25%;
+}
+
+section#ticket_benefit div#box_wrapper .box:hover .text {
+    visibility: visible;
+}
+
+section#ticket_benefit p {
+    margin-top: 2%;
+    font-size: 1.4em;
+    /* color: #FEBC06; */
+
+}
+
+section#ticket_benefit p span {
+    color: #FFCC00;
+}
+
+/*에매 선착순 혜택*/
+section#first_come p:nth-of-type(1) {
+    margin: 0 auto;
+    margin-top: 4%;
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #180050;
+}
+
+section#first_come p {
+    margin-top: 5%;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+section#first_come p span {
+    color: #048E38;
+    font-weight: 700;
+}
+
+#first_come_img img {
+    margin-top: 150px;
+    max-width: 100%;
+}
+
+#first_come_polaroid {
+    max-width: 100%;
+    margin-bottom: -80px;
+}
+
+
+/* 주의사항 */
+section.notice {
+    padding-bottom: 200px;
+    padding-top: 50px;
+    text-align: center;
+    background-color: #EFEFEF;
+}
+
+.notice_contents {
+    display: inline-block;
+    margin-top: 100px;
+}
+
+.notice_contents div {
+    display: inline-block;
+}
+
+.notice .notice_box {
+    width: 20%;
+    border: 1px solid red;
+    /* height: 200px; */
+}
+
+/***************알림톡 경민 시작**************/
+.information {
+    background-color: #232B39;
+    padding-bottom: 120px;
+    width: 100%;
+    /*     text-align: center; */
+}
+
+.information_main {
+    padding-top: 200px;
+    text-align: center;
+}
+
+
+.information h2 {
+    width: 35%;
+    margin: 20px auto;
+    color: #F2BA00;
+}
+
+.information>label {
+    white-space: nowrap;
+}
+
+.information_input_warp {
+    max-width: 800px;
+    margin: 0 auto
+}
+
+.information_input {
+    padding-top: 30px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    color: white;
+    font-size: 1.1em;
+    /* width: 800px; */
+    margin: 0 auto;
+    /* margin-bottom: 10px;  */
+    /* margin-left: 300px; */
+    /* height: 50px; */
+    text-align: center;
+}
+
+#name {
+    /* font-size: 1.5em; */
+    /* margin-top: 100px ; */
+    /* width: 624px; */
+    width: 65%;
+    height: 64px;
+    border-radius: 37px;
+    opacity: 0.51;
+}
+
+
+#information_input_name {
+    /* text-align: left; */
+    /* align-items: left */
+    margin-right: 340px;
+    white-space: nowrap;
+}
+
+
+#information_input_tel {
+    margin-right: 300px;
+    white-space: nowrap;
+}
+
+#tel {
+    /* width: 624px; */
+    width: 65%;
+    height: 64px;
+    border-radius: 37px;
+    opacity: 0.51;
+    /* margin-bottom: 10px; */
+}
+
+#information_btn {
+    height: 60px;
+    width: 170px;
+    border: 2px solid #ffffff;
+    color: #fff;
+    font-size: 22px;
+    background-color: #07041070;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.information_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 50%; */
+    color: #fff;
+    /* text-align: center; */
+    margin-top: 100px;
+}
+
+.information_mid {
+    color: #DFC699;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.4em;
+}
+
+.information_img_a {
+    width: 200px;
+    /* border: 1px solid red; */
+    text-align: center;
+    /* height: 200px; */
+    /* height: 50px; */
+    font-weight: 600;
+
+}
+
+.information_img_a img {
+    margin-bottom: 15px;
+    max-width: 100%;
+}
+
+.information_img_a p:nth-of-type(1) {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.information_img_a p:nth-of-type(2) {
+    display: inline;
+    font-size: 18px;
+    border-bottom: 1px solid #445061;
+    box-shadow: inset 0 -10px 0 #445061;
+}
+
+.information_img_a>img {
+    width: 200px;
+}
+
+.information_img_arrow {
+    padding: 0 20px;
+}
+
+.information_form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 624px;
+    margin: 50px auto;
+    color: #fff;
+}
+
+/* footer  */
+footer {
+    /* background-color: antiquewhite; */
+    position: relative;
+}
+
+.footer_wrap {
+    padding-top: 30px;
+    /*    display: flex; */
+    width: 90%;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 0 auto;
+    /* position: relative; */
+}
+
+.footer_word {
+    width: 50%;
+    color: #848484;
+}
+
+.footer_word p {
+    margin-bottom: 10px;
+}
+
+.footer_icon {
+
+    display: flex;
+    /* width: 50%; */
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
+.footer_icon>div {
+    width: 30%;
+}
+
+.footer_menu>ul {
+    display: flex;
+}
+
+.footer_menu>ul>li {
+    margin-top: 50px;
+    width: 25%;
+    text-align: center;
+}
+
+.footer_menu>ul>li a {
+    color: black;
+    font-weight: 700;
+}
+
+/* .footer_icon{
+    display: flex;
+    flex-wrap: wrap;
+} */
+.footer_COPYRIGHT {
+    position: absolute;
+    /* bottom: 10%; */
+    right: 0;
+}
+
+.mb-header {
+    display: none;
+}
+
+.enter_mb {
+    display: none;
+}
+
+.location_mb {
+    display: none;
+}
+
+.seat_mb {
+    display: none;
+}
+
+.ticket_benefit_mb {
+    display: none;
+}
+
+.first_come_mb {
+    display: none;
+}
+
+.information_img_mb {
+    display: none;
+}
+
+.notice_mb {
+    display: none;
+}
+
+.footer_mb {
+    display: none;
+}
+
+.information_mid2 {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .seat {
+        /* height: 1900px; */
+        background-color: #048E38;
+    }
+
+    #box_wrapper {}
+
+
+    .box_overlay img {
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    /* 메인 헤더 */
+    div#main_poster {
+        position: relative;
+        height: 400px;
+        /*메인포스터*/
+    }
+
+    header {
+        display: none;
+    }
+
+    .mb-header {
+        display: block;
+        background-color: #090524;
+        text-align: center;
+        color: #fff;
+        position: relative;
+        height: 1300px;
+    }
+
+    .mb-header-img1 {
+        width: 100%;
+        /* height: 100%; */
+    }
+
+    .mb-header_icon {
+        margin-top: 70px;
+    }
+
+    .mb-header_icon img {
+        width: 10%;
+
+    }
+
+    .mb-header_icon p:nth-of-type(1) {
+        color: #F2BA00;
+        font-size: 22px;
+        margin-top: 30px;
+    }
+
+    .mb-header p:nth-of-type(2) {
+        font-size: 17px;
+        margin-top: 30px;
+    }
+
+    .mb-header_sc {
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        margin: 46px auto;
+        width: 50%;
+        color: #BBBBBB;
+    }
+
+    .mb-header_sc_warp {
+        margin-top: 125px;
+    }
+
+    .mb-header_sc_line {
+        position: absolute;
+        bottom: 20%;
+        left: 48%;
+    }
+
+    .mb-header_sc2 {
+        margin-top: 120px;
+    }
+
+
+    /* 축제 안내 */
+
+    .enter_contents p:nth-of-type(1) {
+        font-size: 1.4em;
+        padding-bottom: 50px;
+        font-weight: 500;
+    }
+
+    .enter_contents p:nth-of-type(2) {
+        font-size: 1em;
+        line-height: 180%;
+        padding-bottom: 100px;
+    }
+
+    /* 장소 안내  */
+    .location {
+        display: none;
+    }
+
+    .location_mb {
+        display: block;
+        text-align: center;
+        height: 800px;
+        background-color: #090524;
+        color: #fff;
+    }
+
+    .location_mb_icon {
+        padding-top: 70px;
+    }
+
+    .location_mb_icon img {
+        width: 10%;
+    }
+
+    .location_mb_icon p:nth-of-type(1) {
+        margin-top: 20px;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .location_mb_icon p:nth-of-type(2) {
+        margin-top: 20px;
+    }
+
+    /* 자리 안내 모바일 */
+    .seat {
+        display: none;
+    }
+
+    .seat_mb {
+        display: block;
+        height: 2500px;
+        text-align: center;
+
+    }
+
+    .seat_mb_icon {
+        padding-top: 70px;
+    }
+
+    .seat_mb_icon img {
+        width: 10%;
+    }
+
+    .seat_mb_icon p {
+        margin-top: 20px;
+        font-size: 22px;
+        margin-bottom: 50px;
+    }
+
+    /* 구매 혜택  모바일*/
+    #ticket_benefit {
+        display: none;
+    }
+
+    .ticket_benefit_mb {
+        display: block;
+        height: 800px;
+        text-align: center;
+        background-color: #090524;
+    }
+
+    .ticket_benefit_mb_icon {
+        padding-top: 70px;
+        color: #fff;
+    }
+
+    .ticket_benefit_mb_icon img {
+        width: 10%;
+    }
+
+    .ticket_benefit_mb_icon p {
+        margin-top: 20px;
+        font-size: 22px;
+        margin-bottom: 50px;
+    }
+
+    .ticket_benefit_mb_box {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        /* max-width: 100px; */
+        margin: 0 auto;
+        justify-content: center;
+        margin-top: 60px;
+        align-items: center;
+    }
+
+    .ticket_benefit_mb_box img {
+        width: 40%;
+        margin: 10px 11px;
+        /* width: 193px; */
+    }
+
+    .ticket_benefit_mb>p {
+        margin-top: 50px;
+        color: #fff;
+        font-size: 1.1em;
+    }
+
+    .ticket_benefit_mb span {
+        color: #FFCC00;
+    }
+
+    /* 예매 구매 혜택 모바일 */
+    #first_come {
+        display: none;
+    }
+
+    .first_come_mb {
+        display: block;
+        height: 650px;
+        text-align: center;
+    }
+
+    .first_come_mb_icon {
+        padding-top: 70px;
+        /* color: #fff; */
+    }
+
+    .first_come_mb_icon img {
+        width: 10%;
+    }
+
+    .first_come_mb_icon>p {
+        margin-top: 20px;
+        font-size: 22px;
+        margin-bottom: 50px;
+    }
+
+    .first_come_mb>p:nth-of-type(1) {
+        margin: 0 auto;
+        margin-top: 4%;
+        font-size: 1.1em;
+        font-weight: 600;
+        color: #180050;
+    }
+
+    .first_come_mb p:nth-of-type(2) {
+        margin-top: 15%;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+
+    .first_come_mb span {
+        color: #048E38;
+        font-weight: 700;
+    }
+
+    /* 알림톡 신청 입력폼 */
+    .information {
+        /*         height: 1300px; */
+        background-color: #232B39;
+        /* text-align: center; */
+    }
+
+    .information_main {
+        padding-top: 100px;
+        text-align: center;
+    }
+
+
+    .information h2 {
+        width: 100%;
+        font-size: 22px;
+        margin: 20px auto;
+        color: #fff;
+    }
+
+    .information_main img {
+        width: 10%;
+    }
+
+    .information_img {
+        display: none;
+    }
+
+    #name {
+        /* font-size: 1.5em; */
+        /* margin-top: 100px ; */
+        /* width: 400px; */
+        height: 50px;
+        border-radius: 37px;
+        opacity: 0.51;
+    }
+
+    #tel {
+        /* width: 400px; */
+        height: 50px;
+    }
+
+    #information_input_name {
+        margin-right: 220px;
+        white-space: nowrap;
+    }
+
+    #information_input_tel {
+        margin-right: 190px;
+        white-space: nowrap;
+    }
+
+    #information_btn {
+        height: 60px;
+        width: 170px;
+        border: 2px solid #ffffff;
+        color: #fff;
+        font-size: 22px;
+        background-color: #07041070;
+        text-align: center;
+        white-space: nowrap;
+        margin-top: 30px;
+    }
+
+    .information_form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        /* width: 200px; */
+        margin: 30px auto;
+        color: #fff;
+    }
+
+    .information_img_mb {
+        display: block;
+    }
+
+    .information_img_mb img {
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 20px;
+        /* display: flex; */
+        /* flex-direction: column; */
+    }
+
+    .information_mid {
+        display: none;
+    }
+
+    .information_mid2 {
+        color: #DFC699;
+        text-align: center;
+        margin-top: 100px;
+        font-size: 1.1em;
+        line-height: 40px;
+    }
+
+    /* 주의 사항 모바일 */
+
+    .notice {
+        display: none;
+    }
+
+    .notice_mb {
+        display: block;
+        text-align: center;
+        background-color: #EFEFEF;
+        padding-bottom: 150px;
+    }
+
+    .notice_mb_icon {
+        padding-top: 70px;
+    }
+
+    .notice_mb_icon img {
+        width: 10%;
+    }
+
+    .notice_mb_icon p {
+        margin-top: 20px;
+        font-size: 22px;
+        margin-bottom: 50px;
+    }
+
+    /* 푸터 */
+    footer {
+        display: none;
+    }
+
+    .footer_mb {
+        display: block;
+        height: 400px;
+    }
+
+    .footer_mb_word {
+        margin-top: 60px;
+        margin-left: 16px;
+    }
+
+    .footer_mb_word p {
+        margin-bottom: 10px;
+        color: #848484;
+    }
+
+    .footer_mb_word p:nth-of-type(3) {
+        margin-top: 30px;
+    }
+
+    .footer_mb_menu {
+        margin: 0 auto;
+    }
+
+    .footer_mb_menu ul {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        /* flex-wrap: nowrap; */
+        margin-top: 30px;
+    }
+
+    .footer_mb_menu ul li {
+        width: 25%;
+        white-space: nowrap;
+    }
+
+    .footer_mb_menu ul li a {
+        color: black;
+        font-weight: 800;
+    }
+
+    .footer_mb_icon {
+        text-align: center;
+    }
+
+    .footer_mb_icon img {
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+
+    .footer_mb_COPYRIGHT {
+        margin-top: 30px;
+        margin-left: 16px;
+        color: #848484;
+    }
+}

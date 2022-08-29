@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+    <!--메인포스터~축제일정-->
+    <header>
+        <div id="main_poster">
+            <img src="./images/main_PC.png">
+        </div>
+        <div id="schedule_wrapper">
+            <div id="schedule_box1">
+                <img src="./images/schedule_icon.svg" class="wow fadeInUp">
+                <h2>축제 일정</h2>
+                <p>대구 시민과 함게하는 민속 전통 문화 축전</p>
+                <img src="./images/images_PC/top_line.png">
+            </div>
+<!--             <div id="line" class="wow slideInLeft"></div>
+                <div id="circle_box">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div id="third_circle">
+                        <div id="third1"></div>
+                        <div id="third2"></div>
+                        <div id="third3"></div>
+                    </div>
+                </div>
+            </div> -->
+            <div id="schedule_box2">
+                <div class="schedule">
+                    <p>5월 6일(금)</p>
+                    <p>01 점등식</p>
+                    <img src="./images/images_PC/circle.png" class="dongle">
+                </div>
+                <div class="schedule">
+                    <p>5월 7일(토)</p>
+                    <p>02 연등회/연등행렬</p>
+                    <img src="./images/images_PC/circle.png" class="dongle">
+                </div>
+                <div class="schedule">
+                    <img src="./images/skylantern.png" class="wow bounceInUp">
+                    <img src="./images/images_PC/double_circle.png" class="dongle" id="dongle3">
+                    <p>5월 8일(일) <br />
+                        03 달구벌 관등놀이</p>
+                </div>
+                <!--                 <progress value="35"></progress>  바생성, 자바스크립트 돌릴때-->
+            </div>
+        </div>
+    </header>
+    <div class="mb-header">
+        <img class="mb-header-img1" src="./images/images_mobile/main.jpg" alt="">
+        <div class="mb-header_icon">
+            <img src="./images/images_mobile/schedule_icon.svg" alt="">
+            <p>축제일정</p>
+            <p>대구 시민과 함게하는 <br>
+                민속 전통 문화 축전</p>
+        </div>
+        <div class="mb-header_sc_warp">
+            <div class="mb-header_sc">
+                <div>5월 6일(금)</div>
+                <div>01 점등식</div>
+            </div>
+            <div class="mb-header_sc">
+                <div>5월 7일(토)</div>
+                <div>02 연등회<br />
+                    /연등행렬</div>
+            </div>
+        </div>
+        <img class="mb-header_sc_line" src="./images/images_mobile/mb_line.png" alt="">
+        <div class="mb-header_sc2">
+            <p>5월 8일(일)</p>
+            <p> 03 달구벌 관등놀이</p>
+        </div>
+
+    </div>
+
+
+
+
+    <div id="section_wrapper">
+        <!--축제안내-->
+        <section class="section" id="enter">
+
+            <img src="./images/images_PC/latern_icon.png" class="wow fadeInUp">
+            <h2>축제 안내</h2>
+            <!--*******이미지수정하기-->
+            <div class="enter_contents">
+                <p>관등놀이란?</p>
+                <p>
+                    사월초파일에 석가의 탄일을 축하하기 위하여 <br>
+                    등에 붉을 밝혀 달아매는 행사입니다. <br>
+                    <br>
+                    남을 미워하는 마음, 욕심과 어리석음을 없애는 의식으로 <br>
+                    연등은 어둠을 밝혀 복을 구한다는 의미를 담고 있습니다. <br>
+                </p>
+                <img src="./images/images_PC/lantern_image.png">
+            </div>
+        </section>
+
+        <!--장소안내-->
+        <section class="location">
+            <img src="./images/parking_icon.svg" class="wow fadeInUp">
+            <h2>장소 안내</h2>
+            <div id="iframe_box">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3233.9232841325684!2d128.56012356018562!3d35.85088461981593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3565e48448e32d27%3A0xc90ea337152aad46!2z65GQ66WY7JW86rWs7J6l!5e0!3m2!1sko!2skr!4v1652842270274!5m2!1sko!2skr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe></div>
+            <p>
+                *행사당일 지하철 2호선(두류역) 배차간격 6분으로 증편<br />
+                행사장 일대 교통통제와 주변 주차장 협소로 대중교통 이용 권장
+            </p>
+        </section>
+
+        <div class="location_mb">
+            <div class="location_mb_icon">
+                <img src="./images/images_mobile/parking_icon.svg" alt="">
+                <p>장소안내</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3233.9232841325684!2d128.56012356018562!3d35.85088461981593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3565e48448e32d27%3A0xc90ea337152aad46!2z65GQ66WY7JW86rWs7J6l!5e0!3m2!1sko!2skr!4v1652842270274!5m2!1sko!2skr"
+                    width="440" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <p>
+                    *행사당일 지하철 2호선(두류역)<br /> 배차간격 6분으로 증편<br /><br />
+                    행사장 일대 교통통제와 주변 주차장<br /> 협소로 대중교통 이용 권장
+                </p>
+            </div>
+        </div>
+
+        <!--자리안내-->
+        <section class="section seat">
+            <img src="./images/seat_icon.svg" class="wow fadeInUp">
+            <h2>자리 안내</h2>
+            <div class="seat_img">
+                <img src="./images/images_PC/damoon.png">
+                <img src="./images/images_PC/cottonwood.png">
+                <img src="./images/images_PC/anextension.png">
+                <img src="./images/images_PC/bureau.png">
+            </div>
+        </section>
+        <!-- 자리안내 모바일 -->
+        <div class="seat_mb">
+            <div class="seat_mb_icon">
+                <img src="./images/images_mobile/seat_icon.svg" alt="">
+                <p>티켓유형</p>
+            </div>
+            <div class="seat_mb_img">
+                <img src="./images/images_mobile/seat_mb_1.png" alt="">
+                <!-- <img src="./images/images_mobile/seat_mb (1).png" alt="">
+            <img src="./images/images_mobile/seat_mb (2).png" alt="">
+            <img src="./images/images_mobile/seat_mb (3).png" alt="">
+            <img src="./images/images_mobile/seat_mb (4).png" alt=""> -->
+            </div>
+        </div>
+
+        <!--티켓 구매 혜택-->
+        <section class="section" id="ticket_benefit">
+            <img src="./images/ticket_icon.svg" class="wow fadeInUp">
+            <h2>관등놀이 티켓 구매 혜택</h2>
+            <div id="box_wrapper">
+                <div class="box">
+                    <img src="./images/coupon1.jpg">
+                    <div class="text">동화사<br />무료 입장권</div>
+                </div>
+                <div class="box">
+                    <img src="./images/coupon2.jpg">
+                    <div class="text">팔공산<br />케이블카<br />할인권</div>
+                </div>
+                <div class="box">
+                    <img src="./images/coupon3.jpg">
+                    <div class="text">리조트 스파벨리<br />50%할인권</div>
+                </div>
+                <div class="box">
+                    <img src="./images/coupon4.jpg">
+                    <div class="text">얼라이브<br />아쿠아리움<br />대구 50%할인권</div>
+                </div>
+            </div>
+            <p>※티켓을 구매해주시는 모든 분들께 드리는 <span>혜택</span>입니다.</p>
+            <p>티켓 사용기간 : 2022.5.9~2022.5.22</p>
+        </section>
+
+        <!-- 티켓 구매 혜택 모바일 -->
+        <div class="ticket_benefit_mb">
+            <div class="ticket_benefit_mb_icon">
+                <img src="./images/images_mobile/ticket_icon.svg" alt="">
+                <p>티켓 구매 혜택</p>
+            </div>
+            <div class="ticket_benefit_mb_box">
+                <img src="./images/images_mobile/coupon1.png" alt="">
+                <img src="./images/images_mobile/coupon2.png" alt="">
+                <img src="./images/images_mobile/coupon3.png" alt="">
+                <img src="./images/images_mobile/coupon4.png" alt=""> </div>
+            <p>※티켓을 구매해주시는 모든 분들께 드리는 <span>혜택</span>입니다.</p>
+        </div>
+        <!--예매 선착순 혜택-->
+
+        <section class="section" id="first_come">
+            <img src="./images/benefit_icon.svg" class="wow fadeInUp">
+            <h2>예매 선착순 혜택</h2>
+            <p class="wow tada">관등놀이를 예매해주시는 분들 중<br />선착순 50분은 폴라로이드 사진을 찍어드립니다!</p>
+            <p><span>증장천왕</span>자리 근처에 있는 카메라 부스에서 만나요!</p>
+            <div>
+                <img id="first_come_polaroid" src="./images/polaroid.png">
+            </div>
+        </section>
+
+        <!-- 예매 선착순 혜택 모바일 -->
+        <div class="first_come_mb">
+            <div class="first_come_mb_icon">
+                <img src="./images/images_mobile/benefit_icon.svg" alt="">
+                <p>예매 선착순 혜택</p>
+            </div>
+            <p class="wow tada">관등놀이를 예매해주시는 분들 중<br />선착순 50분은 폴라로이드 사진을 찍어드립니다!</p>
+            <p><span>증장천왕</span>자리 근처에 있는 카메라 부스에서 만나요!</p>
+            <div>
+                <img src="./images/images_mobile/polaroid.png">
+            </div>
+        </div>
+
+        <!--알림톡-->
+
+
+        <section class="information">
+            <div class="information_main">
+                <img src="./images/kakaotalk_icon.svg">
+                <h2>알림톡 신청 입력폼</h2>
+            </div>
+
+
+            <div class="information_img">
+                <div class="information_img_a">
+                    <p>1단계</p>
+                    <img src="./images/talk_step1.jpg" alt="">
+                    <p>이름과 전화번호 기입</p>
+                </div>
+                <div class="information_img_arrow"><img src="./images/talk_arrow_icon.svg" alt=""></div>
+                <div class="information_img_a">
+                    <p>2단계</p>
+                    <img src="./images/talk_step2.jpg" alt="">
+                    <p>예매 신청 알림톡 전송</p>
+                </div>
+                <div class="information_img_arrow"><img src="./images/talk_arrow_icon.svg" alt=""></div>
+                <div class="information_img_a">
+                    <p>3단계</p>
+                    <img src="./images/talk_step3.jpg" alt="">
+                    <p>예매하기</p>
+                </div>
+            </div>
+            <div class="information_img_mb">
+                <img src="./images/images_mobile/talk_step1.svg" alt="">
+                <img src="./images/images_mobile/talk_arrow_icon.png" alt="">
+                <img src="./images/images_mobile/talk_step2.svg" alt="">
+                <img src="./images/images_mobile/talk_arrow_icon.png" alt="">
+                <img src="./images/images_mobile/talk_step3.svg" alt="">
+            </div>
+
+            <div class="information_mid">축제 예매를 위한 안내 및 알림톡을 받으실 분들은 아래 양식을 작성해주세요.</div>
+            <div class="information_mid2">축제 예매를 위한 안내 및 알림톡을<br> 받으실 분들은 아래 양식을 작성해주세요.</div>
+            <div class="information_input_warp">
+                <div class="information_input">
+                    <label for="name" id="information_input_name">이름을 입력해주세요*</label>
+                    <input type="text" id="name" style="font-size: 20px;" />
+                </div>
+                <div class="information_input">
+                    <label for="tel" id="information_input_tel">전화번호를 입력해주세요*</label>
+                    <input type="text" id="tel" style="font-size: 20px;" />
+                </div>
+            </div>
+            <div>
+                <!-- Url :   <input type="text" id="btn_url" /> -->
+            </div>
+            <div class="information_form">
+                <form name="frm" method="post" action="UserServlet" onSubmit="return Checkform()">
+
+                    <label for="confirm1">
+                        <input type="checkbox" value="1" id="confirm" name="confirm">(필수) 개인정보 수집 및 이용에 동의합니다. </label>
+                </form>
+
+                <div>
+                    <button id="information_btn" onclick="btn_sendMessage()">제출하기</button>
+                </div>
+            </div>
+            <br />
+
+            <!-- <div>
+                        <a>get pf info</a>
+                        <input type="text" id="pfid" value="KA01PF22041206411o33TFWW9Sl71Ppp" />
+                        <button onclick="getPfInfo()">get</button>
+                    </div>
+                    <div>
+                        <a>get pf infos</a>
+                        <button onclick="getPfInfos()">get</button>
+                    </div>
+    
+                    <div>
+                        <a>get template info</a>
+                        <input type="text" id="template-id" value="KA01TP2204270359062990pX1pOWjX99" />
+                        <button onclick="getTemplateInfo()">get</button>
+                    </div>
+                    <div>
+                        <a>get template infos</a>
+                        <button onclick="getTemplateInfos()">get</button>
+                    </div> -->
+        </section>
+
+
+
+        <!--주의사항-->
+        <section class="notice">
+            <img src="./images/notification_icon.svg">
+            <h2>주의 사항</h2>
+            <div class="notice_contents">
+                <div><img src="./images/images_PC/notice (1).png" alt=""> </div>
+                <div><img src="./images/images_PC/notice (2).png" alt=""> </div>
+                <div><img src="./images/images_PC/notice (3).png" alt=""> </div>
+                <div><img src="./images/images_PC/notice (4).png" alt=""> </div>
+            </div>
+        </section>
+        <!-- 주의 사항 모바일 -->
+        <div class="notice_mb">
+            <div class="notice_mb_icon">
+                <img src="./images/images_mobile/notification_icon.svg" alt="">
+                <p>주의사항</p>
+            </div>
+            <div id="notice_img_box">
+                <img src="./images/images_mobile/notice (1).png" alt="">
+                <img src="./images/images_mobile/notice (2).png" alt="">
+                <img src="./images/images_mobile/notice (3).png" alt="">
+                <img src="./images/images_mobile/notice (4).png" alt="">
+            </div>
+        </div>
+        <!-- 푸터 -->
+        <footer>
+            <div class="footer_wrap">
+                <div> <img src="../그룹 1206@2x.png" alt=""></div>
+                <div class="footer_icon">
+                    <div><img src="./images/footer1.png" alt=""></div>
+                    <div><img src="./images/footer2.png" alt=""></div>
+                    <div><img src="./images/footer3.png" alt=""></div>
+                </div>
+                <div class="footer_word">
+                    <p>대구광역시 남구 중앙대로 51길 11 2층 대구불교총연합회</p>
+                    <p>TEL : 053-623-6388 FAX : 053-422-6388</p>
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href=""> 로그인</a></li>
+                            <li><a href="">회원가입</a></li>
+                            <li><a href="">개인정보취급방침</a></li>
+                            <li><a href="">이용약관</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_COPYRIGHT">COPYRIGHTⓒ 2022 COLORFUL MERRYMAKING AT THE LANTERN FESTIVAL ALL RIGHTS
+                RESERVED.
+            </div>
+        </footer>
+        <!-- 푸터 모바일 -->
+        <div class="footer_mb">
+            <div class="footer_mb_word">
+                <p>대구광역시 남구 중앙대로 51길 11 </p>
+                <p> 2층 대구불교총연합회</p>
+                <p>TEL : 053-623-6388 FAX : 053-422-6388</p>
+                <div class="footer_mb_menu">
+                    <ul>
+                        <li><a href=""> 로그인</a></li>
+                        <li><a href="">회원가입</a></li>
+                        <li><a href="">개인정보취급방침</a></li>
+                        <li><a href="">이용약관</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_mb_icon">
+                <img src="./images/footer1.png" alt="">
+                <img src="./images/footer2.png" alt="">
+                <img src="./images/footer3.png" alt="">
+            </div>
+            <div class="footer_mb_COPYRIGHT">
+                <p>COPYRIGHTⓒ 2022 COLORFUL MERRYMAKING AT<br>
+                    THE LANTERN FESTIVAL ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/hmac-sha256.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64-min.js"></script>
+        <script src="./script/solapi_2.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./css/style.css">
+<script src="./script/jquery-3.6.0.min.js"></script>
+
+<body>
+    <header>
+        <div class="header_wrapper">
+            <div> <img src="./images/마스크 그룹 69@2x.png" alt=""></div>
+            <div id="asd"><img src="./images/그룹 1818@2x.png" alt=""></div>
+            <div class="info">
+                <div class="info_box">
+                    <div>일시</div>
+                    <p>2022.05.08(일)</p>
+                </div>
+                <div class="info_box">
+                    <div>예매혜택</div>
+                    <p>*대구시내 사용가능한 다양한 할인권 제공</p>
+                    <p>(아래 유의사항 참조)</p>
+                    <p>*선착순 100명에게는 추가 폴라로이드 촬영혜택!</p>
+                </div>
+                <div class="info_box">
+                    <div>장소</div>
+                    <p>대구 두류공원 야구장</p>
+                </div>
+                <div class="info_box">
+                    <div>예매방법</div>
+                    <p>아래 좌석선택후 결제</p>
+                    <p>->예매완료 카톡이 오면 성공!</p>
+                </div>
+                <div class="info_box">
+                    <div>예매기간</div>
+                    <p>2022.04.20 ~ 2022.04.30</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 모바일 헤더 -->
+    <div class="mb-header">
+        <img src="./images/mobile/mobile_main_bg1.png" alt="">
+    </div>
+
+
+    <section class="seat_wrapper">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="seat_box">
+            <div class="seat_icon">
+                <img src="./images/seat_icon.svg" alt="">
+                <p>좌석배치도</p>
+            </div>
+            <div class="seat_contents">
+                <img src="./images/그룹 2017@2x.png" alt="">
+            </div>
+            <div class="seat_icon">
+                <img src="./images/그룹 1586@2x.svg" alt="">
+                <p>좌석 선택 및 결제</p>
+                <p>아래 좌석 4종류 중 1종류 선택 후 하단 결제하러가기 클릭!</p>
+            </div>
+            <!-- 좌석 선택 및 결제 -->
+            <div class="seat_select_wrap">
+                <div class="seat_select">
+                    <div>다문천왕</div>
+                    <div><img src="./images/pc/ticket_selection.png" alt=""></div>
+                    <div>1매 4인 입장 30,000원</div>
+                    <div>잔여좌석 205 석</div>
+                    <form action="#">
+                        <!--label태그는 체크박스를 누르지 않아도 연결된 체크박스를 체크해줌-->
+                        <label for="chk">
+                            <span class="text">선택</span>
+                            <input type="checkbox" id="chk" value="v1" onClick="example_1()">
+                            <!--실제로는 글자를 기울이는 태그, 퍼블리셔들이 아이콘담을 때 많이 사용-->
+                            <i class="circle"></i>
+                        </label>
+                    </form>
+                </div>
+                <div class="seat_select">
+                    <div>광목천왕</div>
+                    <div><img src="./images/pc/ticket_selection.png" alt=""></div>
+                    <div>1매 2인 입장 20,000원</div>
+                    <div>잔여좌석 197 석</div>
+                    <form action="#">
+                        <!--label태그는 체크박스를 누르지 않아도 연결된 체크박스를 체크해줌-->
+                        <label for="chk2">
+                            <span class="text">선택</span>
+                            <input type="checkbox" id="chk2" value="v1" onClick="example_2();">
+                            <!--실제로는 글자를 기울이는 태그, 퍼블리셔들이 아이콘담을 때 많이 사용-->
+                            <i class="circle"></i>
+                        </label>
+                    </form>
+                </div>
+                <div class="seat_select">
+                    <div>증장천왕</div>
+                    <div><img src="./images/pc/ticket_selection.png" alt=""></div>
+                    <div>1매 2인 입장 20,000원</div>
+                    <div>잔여좌석 260 석</div>
+                    <form action="#">
+                        <!--label태그는 체크박스를 누르지 않아도 연결된 체크박스를 체크해줌-->
+                        <label for="chk3">
+                            <span class="text">선택</span>
+                            <input type="checkbox" id="chk3" value="v1" onClick="example_3();">
+                            <!--실제로는 글자를 기울이는 태그, 퍼블리셔들이 아이콘담을 때 많이 사용-->
+                            <i class="circle"></i>
+                        </label>
+                    </form>
+                </div>
+                <div class="seat_select">
+                    <div>지국천왕</div>
+                    <div><img src="./images/pc/ticket_selection.png" alt=""></div>
+                    <div>1매 2인 입장 10,000원</div>
+                    <div>잔여좌석 249 석</div>
+                    <form action="#">
+                        <!--label태그는 체크박스를 누르지 않아도 연결된 체크박스를 체크해줌-->
+                        <label for="chk4">
+                            <span class="text">선택</span>
+                            <input type="checkbox" id="chk4" value="v1" onClick="example_4();">
+                            <!--실제로는 글자를 기울이는 태그, 퍼블리셔들이 아이콘담을 때 많이 사용-->
+                            <i class="circle"></i>
+                        </label>
+                    </form>
+                </div>
+                <div class="seat_payment">
+                    <div>
+                        <p>*지금 바로 결제시 선착순 100인 혜택*</p>
+                        <p> (잔여 수량 87개)</p>
+                    </div>
+                    <div>
+                        <p> 결제금액 <span id="payment">0원</span></p>
+                        <p> 결제하러 가기 <img src="./images/pc/ticket_arrow.png" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <img class="grass" src="./images/grass.png" alt="">
+    </section>
+    <!-- 모바일 좌석배치도 -->
+    <section class="seat_wrapper_mb">
+        <div class="seat_mb_box">
+            <div class="seat_mb_icon">
+                <img src="./images/mobile/seat.svg" alt="">
+                <p>좌석배치도</p>
+            </div>
+
+            <img class="seat_info1" src="./images/mobile/seat_info1.png" alt="">
+
+            <div class="seat_mb_icon1">
+                <img src="./images/mobile/coupon.svg" alt="">
+                <p>좌석 선택 및 결제</p>
+                <p>아래 4종류의 좌석 중 1종류를 선택 후 결제하러가기 클릭!</p>
+                <div class="seat_mb_select_wrap">
+                    <div class="seat_mb_select">
+                        <form action="#">
+                            <!--label태그는 체크박스를 누르지 않아도 연결된 체크박스를 체크해줌-->
+                            <label for="chk5">
+                                <span class="text"></span>
+                                <input type="checkbox" id="chk5" value="v1" onClick="example_5()">
+                                <!--실제로는 글자를 기울이는 태그, 퍼블리셔들이 아이콘담을 때 많이 사용-->
+                                <i class="circle"></i>
+                            </label>
+                        </form>
+                        <p>다문천왕<br>
+                            30,000원</p>
+                    </div>
+
+                    <div class="seat_mb_select">
+                        <form action="#">
+                            <!--label태그는 체크박스를 누르지 않아도 연결된 체크박스를 체크해줌-->
+                            <label for="chk6">
+                                <span class="text"></span>
+                                <input type="checkbox" id="chk6" value="v1" onClick="example_6()">
+                                <!--실제로는 글자를 기울이는 태그, 퍼블리셔들이 아이콘담을 때 많이 사용-->
+                                <i class="circle"></i>
+                            </label>
+                        </form>
+                        <p>광목천왕<br>
+                            20,000원</p>
+                    </div>
+
+                    <div class="seat_mb_select">
+                        <form action="#">
+                            <!--label태그는 체크박스를 누르지 않아도 연결된 체크박스를 체크해줌-->
+                            <label for="chk7">
+                                <span class="text"></span>
+                                <input type="checkbox" id="chk7" value="v1" onClick="example_7()">
+                                <!--실제로는 글자를 기울이는 태그, 퍼블리셔들이 아이콘담을 때 많이 사용-->
+                                <i class="circle"></i>
+                            </label>
+                        </form>
+                        <p>증장천왕<br>
+                            20,000원</p>
+                    </div>
+                    <div class="seat_mb_select">
+                        <form action="#">
+                            <!--label태그는 체크박스를 누르지 않아도 연결된 체크박스를 체크해줌-->
+                            <label for="chk8">
+                                <span class="text"></span>
+                                <input type="checkbox" id="chk8" value="v1" onClick="example_8()">
+                                <!--실제로는 글자를 기울이는 태그, 퍼블리셔들이 아이콘담을 때 많이 사용-->
+                                <i class="circle"></i>
+                            </label>
+                        </form>
+                        <p>지국천왕 <br>
+                            10,000원</p>
+                    </div>
+                    <div class="seat_payment_mb">
+                        <div>
+                            <p> 결제금액 <span id="payment_mb">0원</span></p>
+                            <p> 결제하러 가기 <img src="./images/pc/ticket_arrow.png" alt=""></p>
+                        </div>
+                    </div>
+                    <div class="seat_mb_p">
+                        <p>*지금 바로 결제시 선착순 100인 혜택*</p>
+                        <p> (잔여 수량 87개)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="seat_mb_grass">
+                <img src="./images/mobile/people1.png" alt="">
+                <img src="./images/mobile/grass.png" alt="">
+            </div>
+    </section>
+    <!-- pc light -->
+    <img id="notice_light" src="./images/마스크 그룹 66@2x.png" alt="">
+    <!-- pc 유의 사항 -->
+    <section class="notice">
+        <div class="notice_icon">
+            <img src="./images/notice.svg" alt="">
+            <p>유의 사항</p>
+
+        </div>
+        <div class="notice_info">
+            <div class="notice_info1">
+                <div class="notice_box">
+                    <div>달구벌관등놀이 입장시 유의사항</div>
+                    <p>-입장은 행사 당일 13:00-17:00까지 가능합니다. <br>
+                        -안전상의 이유로 18:00 부터 출입구가 전면통제되오니 유의하시기 바랍니다.<br>
+                        -입장시 QR코드를 지참하셔야 입장팔찌 교환이 가능합니다.<br>
+                        (QR코드는 행사 전후 7일간 할인권으로도 사용가능합니다.*티켓구매혜택참고)<br>
+                        -다문천왕 티켓을 구매하신분은 입장팔찌 교환시 풍등을 배부해드리며,<br>
+                        풍등 분실시 재배부가 불가합니다.
+                    </p>
+                </div>
+                <div class="notice_box">
+                    <div>달구벌관등놀이 퇴장시 유의사항</div>
+                    <p>-예상 퇴장시간은 20:30입니다. <br>
+                        -안전상의 이유로 여유를 두고 천천히 퇴장하여 주시길 바랍니다.<br>
+                        -QR코드는 대구시내 4종 할인권으로도 사용가능하니 삭제하지마시기 바랍니다. <br>
+                        -가져오신 소지품은 분실시 책임지지 않으니 유의하시기 바랍니다. </p>
+                </div>
+                <div class="notice_box">
+                    <div>반입금지물품</div>
+                    <p>-달구벌관등놀이는 화재예방을위해 친환경소재 풍등을 <br>
+                        특수처리하여 사용하므로 사재풍등 지참은 불가합니다.
+                    </p>
+                </div>
+
+            </div>
+
+
+
+            <div class="notice_info2">
+                <div class="notice_box">
+                    <div>티켓 구매 시 유의사항 </div>
+                    <p>-달구벌 관등놀이 티켓은 총 2,000매 판매합니다.<br>
+                        -티켓은 1인당 1매 구매 가능며 양도가 불가합니다.<br>
+                        -티켓 환불은 행사 3일 전까지 가능합니다.<br>
+                        -천재지변,우천,강풍 등으로 인한 행사 취소시 환불이 불가합니다.</p>
+                </div>
+
+                <div class="notice_box">
+                    <div>티켓 구매 혜택</div>
+                    <p>- 티켓을 구매해주시는 모든분들께 결제완료시 알림톡으로<br>
+                        대구시 내 사용가 능한 할인QR제공<br>
+                        (동화사 무료입장권, 팔공산 케이블카 3000원 할인권,<br>
+                        대구아쿠아리움 50%할인, 리조트 스파벨리50%할인권) <br>
+                        -대구시내 4종 할인권은 행사 전후 7일까지 사용가능합니다. <br>
+                        -티켓 구매 선착 순 100명에게 추가로 폴라로이드 촬영혜택 제공<br>
+                        (티켓 1매당 폴라로이드 1장)
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 모바일 유의사항 -->
+    <section class="notice_mb">
+        <img src="./images/mobile/light_mobile.png" alt="">
+        <div class="notice_mb_icon">
+            <img src="./images/mobile/notice.svg" alt="">
+            <p>유의 사항</p>
+        </div>
+
+        <div class="notice_mb_info">
+            <div class="notice_mb_box">
+                <div>달구벌관등놀이 입장시 유의사항</div>
+                <p>-입장은 행사 당일 13:00-17:00까지 가능합니다. <br>
+                    -안전상의 이유로 18:00 부터 출입구가 전면통제되오니 유의하시기 바랍니다.<br>
+                    -입장시 QR코드를 지참하셔야 입장팔찌 교환이 가능합니다.<br>
+                    (QR코드는 행사 전후 7일간 할인권으로도 사용가능합니다.*티켓구매혜택참고)<br>
+                    -다문천왕 티켓을 구매하신분은 입장팔찌 교환시 풍등을 배부해드리며,<br>
+                    풍등 분실시 재배부가 불가합니다.
+                </p>
+            </div>
+            <div class="notice_mb_box">
+                <div>달구벌관등놀이 퇴장시 유의사항</div>
+                <p>-예상 퇴장시간은 20:30입니다. <br>
+                    -안전상의 이유로 여유를 두고 천천히 퇴장하여 주시길 바랍니다.<br>
+                    -QR코드는 대구시내 4종 할인권으로도 사용가능하니 삭제하지마시기 바랍니다. <br>
+                    -가져오신 소지품은 분실시 책임지지 않으니 유의하시기 바랍니다. </p>
+            </div>
+            <div class="notice_mb_box">
+                <div>반입금지물품</div>
+                <p>-달구벌관등놀이는 화재예방을위해 친환경소재 풍등을 <br>
+                    특수처리하여 사용하므로 사재풍등 지참은 불가합니다.
+                </p>
+            </div>
+
+
+
+            <div class="notice_mb_box">
+                <div>티켓 구매 시 유의사항 </div>
+                <p>-달구벌 관등놀이 티켓은 총 2,000매 판매합니다.<br>
+                    -티켓은 1인당 1매 구매 가능며 양도가 불가합니다.<br>
+                    -티켓 환불은 행사 3일 전까지 가능합니다.<br>
+                    -천재지변,우천,강풍 등으로 인한 행사 취소시 환불이 불가합니다.</p>
+            </div>
+
+            <div class="notice_mb_box">
+                <div>티켓 구매 혜택</div>
+                <p>- 티켓을 구매해주시는 모든분들께 결제완료시 알림톡으로<br>
+                    대구시 내 사용가 능한 할인QR제공<br>
+                    (동화사 무료입장권, 팔공산 케이블카 3000원 할인권,<br>
+                    대구아쿠아리움 50%할인, 리조트 스파벨리50%할인권) <br>
+                    -대구시내 4종 할인권은 행사 전후 7일까지 사용가능합니다. <br>
+                    -티켓 구매 선착 순 100명에게 추가로 폴라로이드 촬영혜택 제공<br>
+                    (티켓 1매당 폴라로이드 1장)
+
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="footer_mb">
+        <img src="./images/mobile/footer_logo.png" alt="">
+        <p>대구광역시 남구 중앙대로 51길 11 2층 대구불교총연합회</p>
+        <p>TEL : 053-623-6388 FAX : 053-422-6388</p>
+        <div class="footer_mb_img">
+            <img src="./images/mobile/people2.png" alt="">
+            <img id="footer_mb_grass" src="./images/mobile/grass.png" alt="">
+        </div>
+    </section>
+    <footer>
+        <p>COPYRIGHTⓒ 2022 COLORFUL MERRYMAKING AT THE LANTERN FESTIVAL ALL RIGHTS RESERVED.</p>
+        <p>대구광역시 남구 중앙대로 51길 11 2층 대구불교총연합회</p>
+        <p>TEL : 053-623-6388 FAX : 053-422-6388</p>
+        <img class="footer_mb_grass" src="./images/footer_grass.png" alt="">
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/hmac-sha256.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64-min.js"></script>
+    <script src="./script/solapi.js"></script>
+    <script>
+        // $('.seat_payment div:nth-of-type(2) p:nth-of-type(2)').click(btn_sendMessage())
+        console.log($('.seat_payment div:nth-of-type(2) p:nth-of-type(2)'))
+
+        $('.seat_payment div:nth-of-type(2) p:nth-of-type(2)').on('click', btn_sendMessage)
+
+        const example1 = document.querySelector('#chk');
+        const example2 = document.querySelector('#chk2');
+        const example3 = document.querySelector('#chk3');
+        const example4 = document.querySelector('#chk4');
+
+
+        const example5 = document.querySelector('#chk5');
+        const example6 = document.querySelector('#chk6');
+        const example7 = document.querySelector('#chk7');
+        const example8 = document.querySelector('#chk8');
+
+        function asd() {
+            alert("알림")
+        }
+
+        // pc버전 
+        function example_1() {
+            if (example1.checked == true) {
+                example2.checked = false;
+                example3.checked = false;
+                example4.checked = false;
+
+                $('.seat_select:nth-of-type(1)').addClass('active');
+
+                $('.seat_select:nth-of-type(2)').removeClass('active');
+                $('.seat_select:nth-of-type(3)').removeClass('active');
+                $('.seat_select:nth-of-type(4)').removeClass('active');
+                $("#payment").text("30,000원");
+
+            } else {
+                $('.seat_select:nth-of-type(1)').removeClass('active');
+                $("#payment").text("0원");
+            }
+        }
+
+        function example_2() {
+            if (example2.checked == true) {
+                example1.checked = false;
+                example3.checked = false;
+                example4.checked = false;
+                $('.seat_select:nth-of-type(2)').addClass('active');
+                $('.seat_select:nth-of-type(1)').removeClass('active');
+                $('.seat_select:nth-of-type(3)').removeClass('active');
+                $('.seat_select:nth-of-type(4)').removeClass('active');
+                $("#payment").text("20,000원");
+            } else {
+                $('.seat_select:nth-of-type(2)').removeClass('active');
+                $("#payment").text("0원");
+            }
+        }
+
+        function example_3() {
+            if (example3.checked == true) {
+                example1.checked = false;
+                example2.checked = false;
+                example4.checked = false;
+                $('.seat_select:nth-of-type(3)').addClass('active');
+                $('.seat_select:nth-of-type(1)').removeClass('active');
+                $('.seat_select:nth-of-type(2)').removeClass('active');
+                $('.seat_select:nth-of-type(4)').removeClass('active');
+                $("#payment").text("20,000원");
+            } else {
+                $('.seat_select:nth-of-type(3)').removeClass('active');
+                $("#payment").text("0원");
+            }
+        }
+
+        function example_4() {
+            if (example4.checked == true) {
+                example1.checked = false;
+                example2.checked = false;
+                example3.checked = false;
+                $('.seat_select:nth-of-type(4)').addClass('active');
+                $('.seat_select:nth-of-type(1)').removeClass('active');
+                $('.seat_select:nth-of-type(3)').removeClass('active');
+                $('.seat_select:nth-of-type(2)').removeClass('active');
+                $("#payment").text("10,000원");
+            } else {
+                $('.seat_select:nth-of-type(4)').removeClass('active');
+                $("#payment").text("0원");
+            }
+        }
+
+        // 모바일
+
+        function example_5() {
+            if (example5.checked == true) {
+                example6.checked = false;
+                example7.checked = false;
+                example8.checked = false;
+
+                $('.seat_mb_select:nth-of-type(1)').addClass('active2');
+
+                $('.seat_mb_select:nth-of-type(2)').removeClass('active2');
+                $('.seat_mb_select:nth-of-type(3)').removeClass('active2');
+                $('.seat_mb_select:nth-of-type(4)').removeClass('active2');
+                $("#payment_mb").text("30,000원");
+
+            } else {
+                $('.seat_mb_select:nth-of-type(1)').removeClass('active2');
+                $("#payment_mb").text("0원");
+            }
+        }
+
+        function example_6() {
+            if (example6.checked == true) {
+                example5.checked = false;
+                example7.checked = false;
+                example8.checked = false;
+                $('.seat_mb_select:nth-of-type(2)').addClass('active2');
+                $('.seat_mb_select:nth-of-type(1)').removeClass('active2');
+                $('.seat_mb_select:nth-of-type(3)').removeClass('active2');
+                $('.seat_mb_select:nth-of-type(4)').removeClass('active2');
+                $("#payment_mb").text("20,000원");
+            } else {
+                $('.seat_mb_select:nth-of-type(2)').removeClass('active2');
+                $("#payment_mb").text("0원");
+            }
+        }
+
+        function example_7() {
+            if (example7.checked == true) {
+                example8.checked = false;
+                example5.checked = false;
+                example6.checked = false;
+                $('.seat_mb_select:nth-of-type(3)').addClass('active2');
+                $('.seat_mb_select:nth-of-type(1)').removeClass('active2');
+                $('.seat_mb_select:nth-of-type(2)').removeClass('active2');
+                $('.seat_mb_select:nth-of-type(4)').removeClass('active2');
+                $("#payment_mb").text("20,000원");
+            } else {
+                $('.seat_mb_select:nth-of-type(3)').removeClass('active2');
+                $("#payment_mb").text("0원");
+            }
+        }
+
+        function example_8() {
+            if (example8.checked == true) {
+                example7.checked = false;
+                example6.checked = false;
+                example5.checked = false;
+                $('.seat_mb_select:nth-of-type(4)').addClass('active2');
+                $('.seat_mb_select:nth-of-type(1)').removeClass('active2');
+                $('.seat_mb_select:nth-of-type(3)').removeClass('active2');
+                $('.seat_mb_select:nth-of-type(2)').removeClass('active2');
+                $("#payment_mb").text("10,000원");
+            } else {
+                $('.seat_mb_select:nth-of-type(4)').removeClass('active2');
+                $("#payment_mb").text("0원");
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,697 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 헤더 */
+.header_wrapper {
+    position: relative;
+    /* height: 1200px; */
+}
+
+.header_wrapper div:nth-of-type(1) {
+    position: relative;
+}
+
+.header_wrapper>div>img {
+    max-width: 100%;
+    /* height: 1000px; */
+    /* height: 100%; */
+    /* height: 100%; */
+}
+
+#asd {
+    position: absolute;
+    top: 45%;
+    left: 28%;
+    width: 45%;
+}
+
+.info {
+    /* border: 1px solid red; */
+    border-radius: 20px;
+    position: absolute;
+    top: 60%;
+    left: 33%;
+    display: none;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #fff;
+    height: 30%;
+    width: 40%;
+    font-size: 0.8vw;
+
+
+}
+
+.info_box>div {
+    display: inline-block;
+    border: 2px solid #231F46;
+    border-radius: 15px;
+    padding: 0.7vw;
+    font-size: 0.8vw;
+}
+
+/* 좌석배치도 */
+.seat_wrapper {
+    /* z-index: -1; */
+    margin-top: -10px;
+    background-color: #231F46;
+    /* height: 1800px; */
+    text-align: center;
+    position: relative;
+    /* margin: -50px auto; */
+}
+
+.seat_box {
+    background-color: #fff;
+    /* height: 1635px; */
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 30px 30px 0 0;
+    /* padding-bottom: -100px; */
+
+    /* padding-top: 200px; */
+    /* margin-top: 40px; */
+}
+
+.seat_icon {
+    padding-top: 50px;
+}
+
+.seat_icon p:nth-of-type(1) {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #231F46;
+}
+
+.seat_icon p:nth-of-type(2) {
+    color: #231f46bd;
+    margin-top: 40px;
+    font-size: 1.1em;
+}
+
+.seat_contents img {
+    max-width: 100%;
+}
+
+.grass {
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* margin-top: -80px; */
+}
+
+/* 좌석 선택 및 결제  */
+.seat_select_wrap {
+    /* border: 1px solid red; */
+    padding-bottom: 100px;
+}
+
+.seat_select {
+    text-align: left;
+    /* padding-right: ; */
+    margin: 10px auto;
+    /* border: 1px solid red; */
+    border-radius: 23px;
+    background-color: #f1f1f1;
+    width: 55%;
+    color: #231F46;
+    position: relative;
+}
+
+.seat_payment {
+    width: 55%;
+    height: 100px;
+    background-color: #231F46;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.seat_payment div {
+    width: 50%;
+}
+
+.seat_payment div:nth-of-type(1) p {
+    text-align: right;
+    margin-bottom: 5px;
+    font-size: 0.9vw;
+    color: #F1B753;
+    /* font-size: 1.3vw; */
+}
+
+.seat_payment div:nth-of-type(2) p:nth-of-type(1) {
+    margin-bottom: 5px;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+.seat_payment div:nth-of-type(2) p:nth-of-type(2) {
+    cursor: pointer;
+}
+
+.active {
+    background-color: #FFC258;
+}
+
+.seat_select div {
+    padding-left: 30px;
+}
+
+.seat_select div:nth-of-type(1) {
+    font-size: 1.7vw;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.seat_select div:nth-of-type(3) {
+    padding-bottom: 10px;
+    font-size: 1.3vw;
+}
+
+.seat_select div:nth-of-type(4) {
+    font-size: 1.2vw;
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    /* padding-bottom: 10px; */
+
+}
+
+.seat_select img {
+    width: 90%;
+    /* margin-right: 100px; */
+    text-align: center;
+}
+
+
+
+.circle {
+    display: inline-block;
+    /* 영역적용가능해짐 */
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    /* 모서리둥글게 처리 */
+    position: relative;
+    top: 4px;
+    cursor: pointer;
+    /* 마우스 올렸을때 손모양 처리 */
+}
+
+.circle:after {
+    content: '\2714';
+    /* 체크박스 특수문자 */
+    font-size: 24px;
+    color: #F1B753;
+    position: absolute;
+    top: -14px;
+    left: 0;
+
+    opacity: 0;
+    /* 처음엔 안보이게 처리 */
+    transition: 0.2s;
+    /* CSS변화에 시간차 처리 */
+}
+
+/* input이 체크되면 특수문자 보이게 처리 */
+#chk:checked+.circle:after {
+    opacity: 1;
+}
+
+/* 체크박스는 display:none;을 주면 데이터 처리가 안됨 */
+#chk {
+    position: absolute;
+    left: -999em;
+}
+
+#chk2:checked+.circle:after {
+    opacity: 1;
+}
+
+/* 체크박스는 display:none;을 주면 데이터 처리가 안됨 */
+#chk2 {
+    position: absolute;
+    left: -999em;
+}
+
+#chk3:checked+.circle:after {
+    opacity: 1;
+}
+
+/* 체크박스는 display:none;을 주면 데이터 처리가 안됨 */
+#chk3 {
+    position: absolute;
+    left: -999em;
+}
+
+#chk4:checked+.circle:after {
+    opacity: 1;
+}
+
+/* 체크박스는 display:none;을 주면 데이터 처리가 안됨 */
+#chk4 {
+    position: absolute;
+    left: -999em;
+}
+
+.seat_select label {
+    position: absolute;
+    bottom: 40%;
+    right: 13%;
+    color: #fff;
+    font-size: 1.4vw;
+}
+
+
+
+/* 유의사항 */
+.notice {
+    /* height: 700px; */
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+#notice_light {
+    width: 100%;
+}
+
+.notice_icon {
+    margin-top: -100px;
+    font-size: 1.3em;
+
+}
+
+.notice_icon p {
+    margin-top: 10px;
+    font-size: 1.5em;
+    margin-bottom: 100px;
+}
+
+.notice_info {
+    /* display: grid;
+    grid-template-columns: 1fr 2fr ;
+    grid-template-rows: 1fr 1fr; */
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    flex-direction: row;
+    /* white-space: nowrap; */
+}
+
+.notice_info1 {
+    width: 60%;
+}
+
+.notice_info2 {
+    width: 40%;
+}
+
+.notice_box>div {
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.notice_box {
+    margin-top: 30px;
+}
+
+.notice_box p {
+    text-align: left;
+    color: #A7A7A7;
+    font-size: 1.2vw;
+}
+
+/* 푸터 */
+
+footer {
+    height: 250px;
+    background-color: #231F46;
+    position: relative;
+    color: #fff;
+
+}
+
+footer p {
+    text-align: center;
+}
+
+footer p:nth-of-type(1) {
+    padding-top: 50px;
+}
+
+footer p:nth-of-type(2) {
+    margin-top: 20px;
+    font-size: 1.3em;
+}
+
+footer p:nth-of-type(3) {
+    margin-top: 20px;
+    font-size: 1.3em;
+}
+
+footer img {
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+}
+
+.mb-header {
+    display: none;
+}
+
+.seat_wrapper_mb {
+    display: none;
+}
+
+.notice_mb {
+    display: none;
+}
+
+.footer_mb {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        display: none;
+    }
+
+    .mb-header {
+        display: block;
+    }
+
+    .mb-header img {
+        width: 100%;
+    }
+
+    /* 모바일 좌석 배치도 */
+    .seat_wrapper {
+        display: none;
+    }
+
+    .seat_mb_icon {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .seat_mb_icon img {
+        width: 10%;
+    }
+
+    .seat_mb_icon p {
+        /* width: 10%; */
+        font-size: 1.3em;
+        margin: 20px 0;
+    }
+
+    .seat_mb_icon1 {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .seat_mb_icon1 img {
+        width: 10%;
+    }
+
+    .seat_mb_icon1>p:nth-of-type(1) {
+        /* width: 10%; */
+        font-size: 1.3em;
+        margin-top: 20px;
+        /* margin: 20px 0; */
+    }
+
+    .seat_mb_icon1>p:nth-of-type(2) {
+        /* width: 10%; */
+        /* font-size: 1.3em; */
+        /* margin: 0p 0; */
+        color: #929292;
+    }
+
+
+    .seat_wrapper_mb {
+        display: block;
+        background-color: #fff;
+        position: relative;
+    }
+
+    .seat_info1 {
+        width: 100%;
+    }
+
+    /* 모바일 좌석 선택 */
+    .seat_mb_select_wrap {
+        /* margin-top: 20px; */
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        margin: 20px auto;
+        flex-wrap: wrap;
+        padding-bottom: 40px;
+    }
+
+    .seat_mb_select {
+        background-color: #F1F1F1;
+        border-radius: 12px;
+        width: 40%;
+        height: 90px;
+        margin: 8px;
+        display: flex;
+        align-items: center;
+        color: #231F46;
+        /* justify-content: space-between; */
+    }
+
+    .seat_mb_select p {
+        line-height: 30px;
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+
+    .seat_mb_select>form {
+        width: 30%;
+        margin-right: 10%;
+    }
+
+    .seat_payment_mb {
+        background-color: #231F46;
+        width: 84%;
+        text-align: right;
+        color: #fff;
+        padding: 7px;
+        cursor: pointer;
+    }
+
+    .seat_mb_p {
+        color: #FBB336;
+        text-align: right;
+        width: 85%;
+        font-size: 0.9em;
+        font-weight: 600;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    .circle {
+        display: inline-block;
+        /* 영역적용가능해짐 */
+        width: 20px;
+        height: 20px;
+        border: 1px solid #231F46;
+        box-sizing: border-box;
+        border-radius: 10px;
+        /* 모서리둥글게 처리 */
+        position: relative;
+        top: 4px;
+        cursor: pointer;
+        /* 마우스 올렸을때 손모양 처리 */
+        background-image: url(https://blog.kakaocdn.net/dn/XTnSL/btrhtUIVtpB/5FungHN6IXVXG8bLbhE9Dk/img.png);
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #chk5:checked+.circle {
+        background-color: navy;
+        border-color: navy;
+        border: 2px solid rgb(255, 255, 255);
+        background-image: url(https://blog.kakaocdn.net/dn/t7a2D/btrhtVgLYmG/dUxzAkBy9hIZ4gHmyllQrk/img.png);
+    }
+
+
+    /* 체크박스는 display:none;을 주면 데이터 처리가 안됨 */
+    #chk5 {
+        position: absolute;
+        left: -999em;
+    }
+
+    #chk6:checked+.circle {
+        background-color: navy;
+        border-color: navy;
+        border: 2px solid rgb(255, 255, 255);
+        background-image: url(https://blog.kakaocdn.net/dn/t7a2D/btrhtVgLYmG/dUxzAkBy9hIZ4gHmyllQrk/img.png);
+    }
+
+
+    /* 체크박스는 display:none;을 주면 데이터 처리가 안됨 */
+    #chk6 {
+        position: absolute;
+        left: -999em;
+    }
+
+    #chk7:checked+.circle {
+        background-color: navy;
+        border-color: navy;
+        border: 2px solid rgb(255, 255, 255);
+        background-image: url(https://blog.kakaocdn.net/dn/t7a2D/btrhtVgLYmG/dUxzAkBy9hIZ4gHmyllQrk/img.png);
+    }
+
+
+    /* 체크박스는 display:none;을 주면 데이터 처리가 안됨 */
+    #chk7 {
+        position: absolute;
+        left: -999em;
+    }
+
+    #chk8:checked+.circle {
+        background-color: navy;
+        border-color: navy;
+        border: 2px solid rgb(255, 255, 255);
+        background-image: url(https://blog.kakaocdn.net/dn/t7a2D/btrhtVgLYmG/dUxzAkBy9hIZ4gHmyllQrk/img.png);
+    }
+
+
+    /* 체크박스는 display:none;을 주면 데이터 처리가 안됨 */
+    #chk8 {
+        position: absolute;
+        left: -999em;
+    }
+
+    .seat_mb_grass {
+        position: absolute;
+        bottom: -4%;
+        width: 100%;
+    }
+
+    .seat_mb_grass img:nth-of-type(1) {
+        margin-left: 25px;
+        margin-bottom: -13px;
+    }
+
+    .seat_mb_grass img:nth-of-type(2) {
+        width: 100%;
+    }
+
+    .active2 {
+        color: #fff;
+        background-color: #FFC258;
+    }
+
+    /* 모바일 유의사항 */
+    .notice_mb {
+        display: block;
+        text-align: center;
+        margin-top: 35px;
+        background-color: #231F46;
+        /* width: 80%; */
+    }
+
+    .notice_mb>img:nth-of-type(1) {
+        width: 100%;
+    }
+
+    .notice_mb_icon {
+        padding-top: 50px;
+    }
+
+    .notice_mb_icon p {
+        color: #fff;
+        font-size: 1.3em;
+    }
+
+    .notice_mb_info {
+        /* margin-top: 50px; */
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .notice_mb_box {
+        padding-bottom: 30px;
+    }
+
+    .notice_mb_box div {
+        color: #fff;
+        font-size: 1.2em;
+        margin: 12px 0;
+    }
+
+    .notice_mb_box p {
+        text-align: left;
+        color: rgba(255, 255, 255, 0.856);
+        font-size: 0.8em;
+    }
+
+    .notice_mb_icon img {
+        width: 10%;
+    }
+
+    .footer_mb {
+        display: block;
+        background-color: #231F46;
+        text-align: center;
+        color: #fff;
+        padding-top: 100px;
+        font-size: 0.8em;
+        position: relative;
+        padding-bottom: 50px;
+    }
+
+    .footer_mb_img {
+        text-align: right;
+        position: absolute;
+        bottom: -0%;
+    }
+
+    .footer_mb_img img:nth-of-type(1) {
+        margin-bottom: -12px;
+    }
+
+    #footer_mb_grass {
+        width: 100%;
+    }
+
+    .notice {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    #notice_light {
+        display: none;
+    }
+}
