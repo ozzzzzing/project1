@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="78" height="78" viewBox="0 0 78 78">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #f2ba00;
+        stroke-width: 3px;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="그룹_902" data-name="그룹 902" transform="translate(-921 -1414.105)">
+    <path id="date_range_FILL0_wght400_GRAD0_opsz48" class="cls-1" d="M15.3,28.3a1.964,1.964,0,1,1,1.425-.575A1.935,1.935,0,0,1,15.3,28.3Zm8.85,0a1.964,1.964,0,1,1,1.425-.575A1.935,1.935,0,0,1,24.15,28.3Zm8.5,0a1.964,1.964,0,1,1,1.425-.575A1.935,1.935,0,0,1,32.65,28.3ZM9,44a2.878,2.878,0,0,1-2.1-.9A2.878,2.878,0,0,1,6,41V10a2.878,2.878,0,0,1,.9-2.1A2.878,2.878,0,0,1,9,7h3.25V4H15.5V7h17V4h3.25V7H39a2.878,2.878,0,0,1,2.1.9A2.878,2.878,0,0,1,42,10V41a3.076,3.076,0,0,1-3,3Zm0-3H39V19.5H9V41ZM9,16.5H39V10H9Zm0,0V10H9Z" transform="translate(936 1429.105)"/>
+    <g id="타원_41" data-name="타원 41" class="cls-2" transform="translate(921 1414.105)">
+      <circle class="cls-3" cx="39" cy="39" r="39"/>
+      <circle class="cls-4" cx="39" cy="39" r="37.5"/>
+    </g>
+  </g>
+</svg>

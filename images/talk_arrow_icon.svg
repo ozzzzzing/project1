@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28.733" height="53.211" viewBox="0 0 28.733 53.211">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="up-arrow-svgrepo-com_2_" data-name="up-arrow-svgrepo-com (2)" transform="translate(138.337 -59.935) rotate(90)">
+    <g id="Arrow_Drop_Up_Square" transform="translate(59.935 109.604)">
+      <path id="Arrow_Drop_Down_4_" class="cls-1" d="M59.935,135.932a2.452,2.452,0,0,0,2.523,2.4h48.195a2.425,2.425,0,0,0,1.793-4.113L88.282,110.3a2.5,2.5,0,0,0-3.453,0L60.684,134.2A2.378,2.378,0,0,0,59.935,135.932Zm26.622-20.505,18.284,18.1H68.27Z" transform="translate(-59.935 -109.604)"/>
+    </g>
+  </g>
+</svg>
