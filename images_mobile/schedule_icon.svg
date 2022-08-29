@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #f2ba00;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="그룹_1206" data-name="그룹 1206" transform="translate(-0.5 -0.25)">
+    <path id="date_range_FILL0_wght400_GRAD0_opsz48" class="cls-1" d="M9.286,12.586a.694.694,0,1,1,.5-.2A.684.684,0,0,1,9.286,12.586Zm3.127,0a.694.694,0,1,1,.5-.2A.684.684,0,0,1,12.413,12.586Zm3,0a.694.694,0,1,1,.5-.2A.684.684,0,0,1,15.417,12.586ZM7.06,18.134A1.087,1.087,0,0,1,6,17.074V6.12A1.087,1.087,0,0,1,7.06,5.06H8.208V4H9.357V5.06h6.007V4h1.148V5.06h1.148a1.087,1.087,0,0,1,1.06,1.06V17.074a1.087,1.087,0,0,1-1.06,1.06Zm0-1.06h10.6v-7.6H7.06v7.6Zm0-8.657h10.6V6.12H7.06Zm0,0V6.12h0Z" transform="translate(1.42 2.152)"/>
+    <g id="타원_41" data-name="타원 41" class="cls-2" transform="translate(0.5 0.25)">
+      <circle class="cls-3" cx="13.5" cy="13.5" r="13.5"/>
+      <circle class="cls-4" cx="13.5" cy="13.5" r="13"/>
+    </g>
+  </g>
+</svg>
